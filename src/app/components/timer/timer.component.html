@@ -1,0 +1,36 @@
+<div class="timer">
+  <h2 data-test-id="timer-value">{{ getTimeString() }}</h2>
+  <div class="buttons">
+    <button
+      class="button start"
+      data-test-id="start-button"
+      (click)="startTimer()"
+    >
+      Start
+    </button>
+    <button
+      class="button stop"
+      data-test-id="stop-button"
+      (click)="stopTimer()"
+    >
+      Stop
+    </button>
+    <button
+      class="button reset"
+      data-test-id="reset-button"
+      (click)="resetTimer()"
+    >
+      Reset
+    </button>
+    <button class="button plus" data-test-id="plus-button" (click)="addTime(5)">
+      +5
+    </button>
+    <button
+      class="button minus"
+      data-test-id="minus-button"
+      (click)="minusTime(5)"
+    >
+      -5
+    </button>
+  </div>
+</div>
